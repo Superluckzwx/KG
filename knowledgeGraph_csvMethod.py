@@ -32,6 +32,6 @@ with open('dataset/triples.csv', 'r', encoding='utf-8') as f:
             g.merge(end_node, 'Person', 'name')
             g.merge(relation)
             pbar.update(1)
-print(111)
+print(1111)
 print("Knowledge graph construction is complete,url:http://localhost:7474")
 print("done in %0.3fs" % (time() - start_time))
