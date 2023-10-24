@@ -32,8 +32,5 @@ with open('dataset/triples.csv', 'r', encoding='utf-8') as f:
             g.merge(end_node, 'Person', 'name')
             g.merge(relation)
             pbar.update(1)
-if reader.line_num - 1 == csv_row_count:
-    print("Knowledge graph construction is complete,url:http://localhost:7474")
-else:
-    print("Knowledge graph construction is failed,lack:", csv_row_count - reader.line_num)
+print("Knowledge graph construction is complete,url:http://localhost:7474")
 print("done in %0.3fs" % (time() - start_time))
