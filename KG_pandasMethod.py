@@ -26,6 +26,5 @@ if __name__ == '__main__':
             g.merge(end_node, 'Person', 'name')
             g.merge(relation)
             pbar.update(1)
-
     print("Knowledge graph construction is complete,url:http://localhost:7474")
     print("done in %0.3fs" % (time() - start_time))
