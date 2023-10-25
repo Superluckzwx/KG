@@ -1,6 +1,6 @@
 # KG
 
-这是一个生成知识图谱的小程序，并且有两种方法进行实现，具体来说是使用两种不同的包,
+这是一个生成知识图谱的小程序，并且有两种方法进行实现，具体来说是使用两种不同的包，
 目前只支持csv数据集(三列,startNode,relation,endNode)的简单生成，后续会不断更新改进以适应更多数据集
 
 ## Environments,Default installation of the latest version
