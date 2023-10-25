@@ -28,7 +28,7 @@ if __name__ == '__main__':
                     continue
                 start_node = Node('Person', name=item[0])
                 end_node = Node('Person', name=item[1])
-                relation = Relationship(start_node, item[3], end_node)
+                relation = Relationship(start_node, item[2], end_node)
                 g.merge(start_node, 'Person', 'name')
                 g.merge(end_node, 'Person', 'name')
                 g.merge(relation)

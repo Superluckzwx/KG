@@ -21,7 +21,7 @@ if __name__ == '__main__':
         for i in range(csv_row_count):
             start_node = Node('Person', name=df['head'][i])
             end_node = Node('Person', name=df['tail'][i])
-            relation = Relationship(start_node, df['label'][i], end_node)
+            relation = Relationship(start_node, df['relation'][i], end_node)
             g.merge(start_node, 'Person', 'name')
             g.merge(end_node, 'Person', 'name')
             g.merge(relation)
